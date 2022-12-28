@@ -12,11 +12,8 @@ export const tableSlice = createSlice({
     },
     searchEmployees: (state, action) => {
       state.employee = action.payload;
-    },
-    sideHidden: (state, action) => {
-      state.side = action === false
-    }
-  },
+    }, 
+   },
 });
 export const { getEmployees, sideHidden } = tableSlice.actions;
 export default tableSlice.reducer;

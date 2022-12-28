@@ -1,9 +1,9 @@
-import React from 'react';
-import axios from 'axios';
 import { useEffect } from 'react';
-import Navbar from './Navbar';
 import { useDispatch, useSelector } from 'react-redux';
 import { getEmployees } from './tableSlice';
+import Navbar from './Navbar';
+import axios from 'axios';
+
 
 const TableComp = () => {
   const Dispatch = useDispatch();
@@ -20,7 +20,7 @@ const TableComp = () => {
 
   return (
     <div className="md:flex-col md:px-10 text-sm">
-      <Navbar />
+      <Navbar data-testid="nav" title="nav" />
       <div className="flex-col">
         <h1 className="py-5 font-bold text-4xl">Data Tables</h1>
         <div className="px-5">
