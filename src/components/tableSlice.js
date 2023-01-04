@@ -4,7 +4,6 @@ export const tableSlice = createSlice({
   name: 'table',
   initialState: {
     employee: [],
-    side: true,
   },
   reducers: {
     getEmployees: (state, action) => {
