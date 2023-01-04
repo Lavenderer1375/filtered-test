@@ -6,6 +6,6 @@ import asideSliceReducer from "./asideSlice";
 export default configureStore({
     reducer:{
         table: tableSliceReducer,
-        side: asideSliceReducer,
+        aside: asideSliceReducer,
     }
 })
