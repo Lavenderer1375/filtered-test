@@ -16,12 +16,12 @@ const Aside = () => {
   };
 
   return (
-    <div className="flex-col font-normal md:w-1/6 w-1/3 h-screen p-3 md:mr- justify-start bg-stone-700 border-cyan-500 text-white border-r-4">
+    <div className="flex-col md:w-1/4 w-1/3 h-screen p-3 justify-start bg-stone-700 border-cyan-500 text-cyan-400 border-r-8">
       <div className="flex-col pb-0 text-white rounded-t-lg mb-2">
         <h1 className="flex border-b-2 border-cyan-500 w-full pt-0 py-2 mb-2 font-bold text-xl">
           AdminLTE 3
         </h1>
-        <div className="border-b-2 border-cyan-500 flex mb-5 w-full py-5 items-center">
+        <div className="border-b-2 border-cyan-500 flex mb-5 w-full py-2 items-center">
           <span>
             <img
               className="w-12 h-12 mr-2 overflow-hidden rounded-full shadow-md shadow-stone-400"
@@ -43,44 +43,44 @@ const Aside = () => {
         <span>
           <button
             onClick={() => nameCather()}
-            className="rounded bg-stone-500 border-2 border-cyan-500 w-10 h-10 hover:bg-cyan-500 hover:text-white duration-200"
+            className="rounded bg-stone-500 border-2 border-cyan-500 w-14 h-10 hover:bg-cyan-500 hover:text-white duration-200"
           >
             <ion-icon name="search"></ion-icon>
           </button>
         </span>
-        <div className="flex my-5">
-          <ul>
-            <li className="flex">
+        <div className="flex my-5 text-xl font-semibold">
+          <ul className='w-full'>
+            <li className="flex hover:bg-cyan-500 hover:text-stone-900 duration-200">
               <span className="text-2xl pr-2">
                 <ion-icon name="aperture"></ion-icon>
               </span>
               Dashboard
             </li>
-            <li className="flex">
+            <li className="flex hover:bg-cyan-500 hover:text-stone-900 duration-200">
               <span className="text-2xl pr-2">
                 <ion-icon name="wine"></ion-icon>
               </span>
               Widgets
             </li>
-            <li className="flex">
+            <li className="flex hover:bg-cyan-500 hover:text-stone-900 duration-200">
               <span className="text-2xl pr-2">
                 <ion-icon name="layers"></ion-icon>
               </span>
               Layout options
             </li>
-            <li className="flex">
+            <li className="flex hover:bg-cyan-500 hover:text-stone-900 duration-200">
               <span className="text-2xl pr-2">
                 <ion-icon name="pie-chart"></ion-icon>
               </span>
               Charts
             </li>
-            <li className="flex">
+            <li className="flex hover:bg-cyan-500 hover:text-stone-900 duration-200">
               <span className="text-2xl pr-2">
                 <ion-icon name="tv"></ion-icon>
               </span>
               UI Elements
             </li>
-            <li className="flex">
+            <li className="flex hover:bg-cyan-500 hover:text-stone-900 duration-200">
               <span className="text-2xl pr-2">
                 <ion-icon name="albums"></ion-icon>
               </span>

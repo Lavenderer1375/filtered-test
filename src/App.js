@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 function App() {
   return (
     <Provider store={store}>
-      <div className="App flex">
+      <div className="App flex w-screen cursor-pointer">
       <Aside />
       <TableComp />
     </div>
