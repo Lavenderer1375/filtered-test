@@ -20,7 +20,7 @@ const TableComp = () => {
 
   return (
     <div className="md:flex-col md:px-10 text-sm">
-      <Navbar data-testid="nav" title="nav" />
+      <Navbar data-testid="nav" />
       <div className="flex-col">
         <h1 className="py-5 font-bold text-4xl">Data Tables</h1>
         <div className="px-5">

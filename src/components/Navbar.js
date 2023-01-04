@@ -8,7 +8,7 @@ const Navbar = () => {
         <span>
           <ion-icon name="globe"></ion-icon>
         </span>
-        <h1>Dashboard</h1>
+        <h1 title="nav">Dashboard</h1>
       </div>
       <div>
         <ion-icon name="closed"></ion-icon>
