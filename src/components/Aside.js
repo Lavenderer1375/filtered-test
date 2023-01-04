@@ -8,31 +8,33 @@ import { getEmployees } from './tableSlice';
 const Aside = () => {
   const [inp, setInp] = useState('');
   const Dispatch = useDispatch();
-  
+
   const nameCather = async () => {
     await axios
       .get(`http://localhost:3001/employees/search/${inp}`)
       .then((res) => Dispatch(getEmployees(res.data)));
-  };    
+  };
 
   return (
-    <div className="flex-col font-normal md:w-1/4 w-1/3 h-screen p-3 md:mr-2 justify-start bg-stone-700 border-cyan-500 text-white border-r-4">
+    <div className="flex-col font-normal md:w-1/6 w-1/3 h-screen p-3 md:mr- justify-start bg-stone-700 border-cyan-500 text-white border-r-4">
       <div className="flex-col pb-0 text-white rounded-t-lg mb-2">
-        <h1 className="flex border-b-2 w-full pt-0 py-2 mb-2">AdminLTE 3</h1>
-        <div className="border-b-2 flex mb-5 w-full py-5 items-center">
+        <h1 className="flex border-b-2 border-cyan-500 w-full pt-0 py-2 mb-2 font-bold text-xl">
+          AdminLTE 3
+        </h1>
+        <div className="border-b-2 border-cyan-500 flex mb-5 w-full py-5 items-center">
           <span>
             <img
-              className="w-12 h-12 mr-4 overflow-hidden rounded-full shadow-md shadow-stone-400"
+              className="w-12 h-12 mr-2 overflow-hidden rounded-full shadow-md shadow-stone-400"
               src={Pic}
               alt="profile"
             />
           </span>
-          <h1>Alexander Pierce</h1>
+          <h1 className="font-semibold text-lg">Alexander Pierce</h1>
         </div>
       </div>
-      <div>
+      <div className="flex-row justify-start items-center">
         <input
-          className="rounded-md border-2 mr-3 w-4/5 border-none p-2 text-black"
+          className="rounded-md border-2 placeholder:text-black border-cyan-500 mr-1 w-4/5 focus:bg-cyan-500 focus:border-none focus:text-white p-2 text-black duration-200"
           type="search"
           onChange={(event) => setInp(event.target.value)}
           value={inp}
@@ -41,7 +43,7 @@ const Aside = () => {
         <span>
           <button
             onClick={() => nameCather()}
-            className="rounded bg-stone-500 border-none w-10 h-10"
+            className="rounded bg-stone-500 border-2 border-cyan-500 w-10 h-10 hover:bg-cyan-500 hover:text-white duration-200"
           >
             <ion-icon name="search"></ion-icon>
           </button>

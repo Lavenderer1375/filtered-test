@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex">
       <div
         data-testid="dash"
         className="flex items-center font-semibold text-2xl"

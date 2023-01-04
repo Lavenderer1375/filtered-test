@@ -4,7 +4,6 @@ import { getEmployees } from './tableSlice';
 import Navbar from './Navbar';
 import axios from 'axios';
 
-
 const TableComp = () => {
   const Dispatch = useDispatch();
   const { employee } = useSelector((state) => state.table);
@@ -28,40 +27,40 @@ const TableComp = () => {
         </div>
       </div>
       <div>
-        <table className="md:table-fixed my-10">
-          <tr className="bg-stone-400">
-            <th className="px-10 border-b-2 py-5 justify-start items-start hover:bg-stone-600 hover:text-white ease-in duration-200">
+        <table className="md:table-fixed my-10 bg-stone-200">
+          <tr className="bg-cyan-600 text-stone-900 text-lg">
+            <th className="px-10 border-b-2 py-5 justify-start items-start hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
               Employees ID
             </th>
-            <th className="px-10 border-b-2 py-5 justify-start items-start hover:bg-stone-600 hover:text-white ease-in duration-200">
+            <th className="px-10 border-b-2 py-5 justify-start items-start hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
               Name
             </th>
-            <th className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-white ease-in duration-200">
+            <th className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
               Email
             </th>
-            <th className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-white ease-in duration-200">
+            <th className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
               Username
             </th>
-            <th className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-white ease-in duration-200">
+            <th className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
               Role
             </th>
           </tr>
           {employee.length > 0 ? (
             employee?.map((item, index) => (
-              <tr key={index}>
-                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-white ease-in duration-200">
+              <tr key={index} className="text-lg">
+                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
                   {item.id}
                 </td>
-                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-white ease-in duration-200">
+                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
                   {item.name}
                 </td>
-                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-white ease-in duration-200">
+                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
                   {item.email}
                 </td>
-                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-white ease-in duration-200">
+                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
                   {item.username}
                 </td>
-                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-white ease-in duration-200">
+                <td className="px-10 border-b-2 py-5 hover:bg-stone-600 hover:text-cyan-500 ease-in duration-200">
                   {item.role}
                 </td>
               </tr>
